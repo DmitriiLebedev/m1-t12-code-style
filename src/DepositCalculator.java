@@ -4,7 +4,7 @@ public class DepositCalculator {
     Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        new DepositCalculator().userInteraction();
+        new DepositCalculator().chooseDeposit();
     }
 
     double calculateComplexPercent(double amount, double yearRate, int depositPeriod) {
@@ -21,7 +21,7 @@ public class DepositCalculator {
         return Math.round(payout * scale) / scale;
     }
 
-    void userInteraction() {
+    void chooseDeposit() {
         int amount;
         int depositPeriod;
         int input;
